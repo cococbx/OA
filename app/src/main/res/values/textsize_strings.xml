@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="T60">60px</string>
+    <string name="T54">54px</string>
+    <string name="T51">51px</string>
+    <string name="T48">48px</string>
+    <string name="T45">45px</string>
+    <string name="T43">43px</string>
+    <string name="T41">41px</string>
+    <string name="T38">38px</string>
+    <string name="T36">36px</string>
+
+</resources>

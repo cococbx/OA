@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434343"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="0dp" >
+        
+        
+        <TextView
+            android:id="@+id/refushYitiTv"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:background="@null"
+          	android:text="更新"
+          	android:gravity="center"
+          	android:textColor="@color/white"
+          	android:textSize="16sp"
+            />
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#191B1C" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

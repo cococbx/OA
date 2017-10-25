@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECECEC"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/title_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/sys_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="28.0sp" />
+
+        <ImageButton
+            android:id="@+id/refuse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="20dp"
+            android:src="@drawable/back_icon" />
+        
+       
+ <TextView
+        android:id="@+id/fileStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="80dp"
+        android:layout_gravity="center_vertical|right"
+        android:text="正在下载"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+        <ImageButton
+            android:id="@+id/top_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:paddingRight="20dp"
+            android:src="@drawable/top_more" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/load_progressBar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:indeterminateDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无会议召开"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.wanhuiyuan.szoa.myview.InScrollListView
+                android:id="@+id/nowList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:background="@color/white"
+                android:cacheColorHint="@color/transparent"
+                android:divider="#ECECEC"
+                android:dividerHeight="1px" >
+            </com.wanhuiyuan.szoa.myview.InScrollListView>
+
+            <TextView
+                android:id="@+id/historyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="历史会议"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:visibility="gone" />
+
+            <com.wanhuiyuan.szoa.myview.InScrollListView
+                android:id="@+id/waiteList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20px"
+                android:background="@color/white"
+                android:cacheColorHint="@color/transparent"
+                android:divider="#dcdcdc"
+                android:dividerHeight="1px" >
+            </com.wanhuiyuan.szoa.myview.InScrollListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

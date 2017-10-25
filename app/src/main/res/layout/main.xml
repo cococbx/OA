@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- 用户名 -->
+
+        <TextView
+            android:id="@+id/lab_user_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textSize="19sp"
+            android:textColor="@color/orangered" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edt_user_name"
+            android:textSize="19sp"
+            android:textColor="@color/orangered" />
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您使用什么设备？"
+        android:textSize="19sp"
+        android:textColor="@color/orangered" />
+
+    <RadioGroup
+        android:id="@+id/modes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/common_mode"
+            android:checked="true"
+            android:text="智能Android手机、不携带擦除功能手写笔的平板（如：三星Note系列）等"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioGroup
+                android:id="@+id/sign_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/image_sign"
+                    android:text="图片签批，放缩会模糊"
+                    android:textSize="15sp"
+                    android:textColor="@color/slategray" />
+
+                <RadioButton
+                    android:id="@+id/vector_sign"
+                    android:checked="true"
+                    android:text="矢量签批,放缩不失真"
+                    android:textSize="15sp"
+                    android:textColor="@color/slategray" />
+            </RadioGroup>
+        </HorizontalScrollView>
+
+        <RadioButton
+            android:id="@+id/eben_mode"
+            android:text="E人E本系列设备"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" />
+        
+        <CheckBox
+            android:id="@+id/isSaveVector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="支持签批保存之后单笔删除"
+            android:textSize="15sp"
+            android:textColor="@color/slategray" 
+            android:visibility="gone"/>
+        
+        <!-- <RadioButton
+            android:id="@+id/eben_sdk_mode"
+            android:text="E人E本系列设备,同时使用E本手写包开发"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" /> -->
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/view_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pageview_mode"
+        android:textSize="19sp"
+        android:textColor="@color/orangered" />
+
+    <RadioGroup
+        android:id="@+id/viewmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/viewmode_vs"
+            android:checked="true"
+            android:text="连续滑动翻页"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" />
+
+        <RadioButton
+            android:id="@+id/viewmode_singleh"
+            android:text="单页横向滑动翻页"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" />
+
+        <RadioButton
+            android:id="@+id/viewmode_singlev"
+            android:text="单页纵向滑动翻页"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/import_export"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="导入导出批注类型："
+        android:textSize="19sp"
+        android:textColor="@color/orangered" />
+
+   <RadioGroup
+        android:id="@+id/annot_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/annot_stmap"
+            android:checked="true"
+            android:text="全文签批"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" />
+
+        <RadioButton
+            android:id="@+id/annot_text"
+            android:text="文字注释"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" />
+        
+        <RadioButton
+            android:id="@+id/annot_sound"
+            android:text="语音注释"
+            android:textSize="17sp"
+            android:textColor="@color/royalblue" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/other_optional_features"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他可选功能示例:"
+        android:textSize="19sp"
+        android:textColor="@color/orangered" />
+    
+    <CheckBox
+        android:id="@+id/can_field_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启域编辑功能，适用于表单PDF文件"
+        android:textColor="@color/royalblue"
+        android:layout_marginLeft="25dp"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:id="@+id/annot_protect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="文档保存之后设为可读"
+        android:textColor="@color/royalblue"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:id="@+id/fill_template"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="填充公安模板（仅适用于本应用自动生成的公安模板.pdf文件）"
+        android:textColor="@color/royalblue"
+        android:textSize="17sp" />
+    
+    <CheckBox
+        android:id="@+id/save_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="从上次退出的位置开始阅读"
+        android:textColor="@color/royalblue"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="以下是本地PDF文档列表："
+        android:textSize="19sp"
+        android:textColor="@color/orangered" />
+
+    <ListView
+        android:id="@+id/book_directory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

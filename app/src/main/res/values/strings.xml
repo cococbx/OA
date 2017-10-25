@@ -1,0 +1,35 @@
+<resources>
+
+    <string name="app_name">会议系统</string>
+    <string name="meeting_info">会议通知</string>
+    <string name="meeting_yiti">会议议题</string>
+    <string name="meeting_renyuan">参会人员</string>
+    <string name="meeting_service">呼叫服务</string>
+    <string name="jump"><u>跳转</u></string>
+    <string name="exit_meeting">退出会议</string>
+    
+    
+
+    <string name="meeting_should_attend">应到:%1$s人</string>
+    <string name="meeting_now_attend">实到:%1$s人</string>
+    <string name="meeting_replace_attend">替会:%1$s人</string>
+    
+    
+    <string name="meeting_replace_btn">[替会]</string>
+    
+    
+    <string name="meeting_type_attend">已到会</string>
+    <string name="meeting_type_replace">替会</string>
+    <string name="meeting_type_absence">未到</string>
+    <string name="meeting_type_leave">请假</string>
+    
+    <string name="pull_refresh">下拉加载</string>
+    <string name="pull_update">上拉刷新</string>
+    <string name="text_data_loading">正在载入中</string>
+    
+    <!-- 服务器地址 -->
+    <string name="ip">218.17.83.55</string>
+    <string name="port">7001</string>
+    <string name="project">szoa_zw</string>
+
+</resources>

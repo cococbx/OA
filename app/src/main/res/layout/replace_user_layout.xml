@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/activity_title" />
+
+    <ProgressBar
+        android:id="@+id/load_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="#00000000"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/progressbar" />
+
+     <com.wanhuiyuan.szoa.gridview.MyGridView
+        android:id="@+id/GridView_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"
+        tools:ignore="NestedScrolling" >
+    </com.wanhuiyuan.szoa.gridview.MyGridView>
+
+</LinearLayout>

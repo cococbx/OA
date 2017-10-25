@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/meetingNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="深圳市无纸化会议系统"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_input_bg"
+        android:orientation="vertical"
+        android:layout_below="@+id/meetingNameTextView" 
+        android:layout_marginTop="150dp">
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_selector"
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="25dp"
+            android:text=""
+        	android:singleLine="true"
+            android:hint="账号" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edittext_selector"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="25dp"
+        	android:singleLine="true"
+            android:hint="登录密码"
+            android:password="true"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+			<!-- 
+            <EditText
+                android:id="@+id/login_replacename"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:maxLength="4"
+                android:background="@drawable/edittext_selector"
+                android:drawablePadding="25dp"
+                android:hint="替会人姓名" /> -->
+
+            <CheckBox
+                android:id="@+id/cBsavepwd"
+                android:layout_marginLeft="50dp"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存密码" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="#6caeea"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/visitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="50dp"
+                android:layout_alignParentLeft="true"
+                android:text="访客登录"
+                android:textColor="#6caeea"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/authorizeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="50dp"
+                android:layout_alignParentRight="true"
+                android:text="授权登录"
+                android:textColor="#6caeea"
+                android:textSize="18sp" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/versionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="1.0"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageButton
+         android:id="@+id/config"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+     	android:layout_alignParentTop="true"
+         android:layout_gravity="right"
+         android:background="@null"
+         android:paddingRight="20dp"
+         android:src="@drawable/config_btn" />
+    
+<!-- 
+    <TextView
+        android:id="@+id/fileStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="正在下载"
+        android:textColor="@color/white"
+        android:textSize="14sp" /> -->
+
+</RelativeLayout>

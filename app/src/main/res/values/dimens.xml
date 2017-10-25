@@ -1,0 +1,23 @@
+<resources>
+
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_34">34sp</dimen>
+    <dimen name="font_size_45">45sp</dimen>
+    <dimen name="head_height">45dp</dimen>
+    <dimen name="home_list_item_display_outside_margin">5dp</dimen>
+    <dimen name="home_list_item_display_between_margin">3dp</dimen>
+    <dimen name="dialpad_digits_text_size">35sp</dimen>
+    <dimen name="normal_height">64dip</dimen>
+    <dimen name="expanded_height">128dip</dimen>
+    <dimen name="quickaction_shadow_horiz">0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+    
+</resources>

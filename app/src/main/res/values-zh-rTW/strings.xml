@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tip_title">提示</string>
+    <string name="ok">確定</string>
+    <string name="dialog_bad_file">文件已損壞</string>
+    <string name="dialog_repair_file">文件結構異常，修復后可正常瀏覽。</string>
+    <string name="cancel">取消</string>
+    <string name="repair">立即修復</string>
+    <string name="password_authentication">密碼驗證</string>
+    <string name="cache_moving_text">移動緩存文件&#8230;</string>
+    <string name="cache_moving_progress">移動緩存文件%1$d/%2$d</string>
+    <string name="read_only">該對象為只讀狀態，無法移動或刪除！</string>
+    <string name="sealVerifySuccess">簽章驗證成功！</string>
+    <string name="sealVerifyFailed">簽章驗證失敗！</string>
+    <string name="iAppPDFVerifyP7">iAppPDF目前只能驗證P7格式的簽名！當前的格式為：</string>
+    <string name="programError">程序出錯啦</string>
+    <string name="dialog_title">提示</string>
+    <string name="move_note_propmt">批註只能在它所在頁內移動！</string>
+    <string name="note_add">請點擊需要插入注釋的位置!</string>
+    <string name="sound_add">請點擊需要插入語音批註的位置!</string>
+    <string name="finger_add">請點擊需要插入指紋批註的位置!</string>
+    <string name="pictureRegion">該文檔沒有圖片與，無法做圖片插入操作</string>
+    <string name="username_different_edit">你無權編輯其他用戶添加的批註信息!</string>
+    <string name="print">即將進行打印</string>
+    <string name="insertHandwrittenFailed">插入手寫批註失敗！</string>
+    <string name="error_page_out_of_rande">頁碼大小在範圍之外，無效範圍： 1-%1$d</string>
+    <string name="enter">請輸入</string>
+    <string name="msg_search_text_on_page">"在頁內查找%1$d&#8230;"</string>
+    <string name="msg_no_text_found">"文本沒有找到"</string>
+    <string name="dialog_open_document">正在打開，請稍後 &#8230;</string>
+    <string name="dialog_wrong_password">密碼錯誤，請重新輸入！</string>
+    <string name="dialog_verify">文檔受到保護，請輸入"文檔打開密碼"。</string>
+    <string name="msg_wrong_password">"錯誤的密碼&#8230;"</string>
+    <string name="msg_password_required">"輸入密碼&#8230;"</string>
+    <string name="CertificateType">證書類型：</string>
+    <string name="signatureCertificate">簽名證書：</string>
+    <string name="keylength">密鑰長度：</string>
+    <string name="interchangeCertificate">交換證書：</string>
+    <string name="hasSignCertificate">有</string>
+    <string name="freeSignCertificate">無</string>
+    <string name="text_page">頁</string>
+    <string name="msg_loading_book">"正在加載文檔: %1$s&#8230;"</string>
+    <string name="opds_loading_book">"正在加載文檔: %1$s/%2$s&#8230;"</string>
+    <string name="hint_nosigned">沒有簽批內容，無需保存！</string>
+    <string name="brushpen">毛筆</string>
+    <string name="ballpen">鋼筆</string>
+    <string name="pencil">鉛筆</string>
+    <string name="waterpen">水彩筆</string>
+    <string name="penwidth">寬度：</string>
+
+</resources>

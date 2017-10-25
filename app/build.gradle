@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "25.0.0"
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.cec.szoa"
+        minSdkVersion 8
+        targetSdkVersion 21
+    }
+
+    lintOptions {
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'wanhuiyuan'
+            keyPassword 'whyzdm'
+            storeFile file('../wanhuiyuankey')
+            storePassword 'whyzdm'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile files('libs/afinal_0.5.1_bin.jar')
+    compile files('libs/eventbus.jar')
+    compile files('libs/fastjson-1.1.34.jar')
+    compile files('libs/horizon-core.jar')
+    compile files('libs/iAppPDF.jar')
+    compile files('libs/jg_filter_sdk_1.1.jar')
+    compile files('libs/ksoap2-android-assembly-2.6.5-jar-with-dependencies.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/wup-1.0.0.E-SNAPSHOT.jar')
+}

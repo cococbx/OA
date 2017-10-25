@@ -1,0 +1,345 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/toptitle_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8E8E8"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#B5B5B5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="@color/white" >
+
+            <FrameLayout
+                android:id="@+id/book_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" 
+                android:clickable="true">
+            </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#50000000" >
+
+            <TextView
+                android:id="@+id/file_titile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pizhuLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="27dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <CheckBox
+                android:id="@+id/fl_pen"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/sxpx_fl"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="手写签批" 
+                android:textColor="@color/postil_text"/>
+
+            <CheckBox
+                android:id="@+id/fl_annotation"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/wzpx_fl"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="文字批注"
+                android:textColor="@color/postil_text" />
+
+            <CheckBox
+                android:id="@+id/lockopen"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lock_unlock"
+                android:button="@null" />
+
+            <CheckBox
+                android:id="@+id/locked"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/lock_lock"
+                android:button="@null"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="旋屏锁定"
+                android:textColor="@color/postil_text" />
+
+            <CheckBox
+                android:id="@+id/img_Float"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gdgn_fl"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="更多功能" 
+                android:textColor="@color/postil_text"/>
+
+            <CheckBox
+                android:id="@+id/back_imgbtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tcyd_fl"
+                android:button="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="退出阅读" 
+                android:textColor="@color/postil_text"/>
+
+            <LinearLayout
+                android:id="@+id/pageLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/page_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/nowpageTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textAppearance="@style/pdf_jumpbtn"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/jumppageEv"
+                    android:layout_width="55dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:numeric="integer"
+                    android:textColor="@color/grey"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/sumpageTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/pdf_jumpbtn"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/jumppageTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/jump"
+                    android:textAppearance="@style/pdf_jumpbtn"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.wanhuiyuan.szoa.myview.RoundProgressBar
+            android:id="@+id/roundProgressBar"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/tab_rdogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/seekBarLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_above="@id/tab_rdogroup"
+                android:background="#f1f1f1"
+                android:orientation="horizontal" >
+
+                <SeekBar
+                    android:id="@+id/gopageSeekBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="4"
+                    android:focusable="true"
+                    android:maxHeight="4dp"
+                    android:minHeight="4dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="28dp"
+                    android:progressDrawable="@drawable/po_seekbar"
+                    android:thumb="@drawable/seekbar_thumb" />
+
+                <LinearLayout
+                    android:layout_width="530dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounded_layout"
+                    android:gravity="center" >
+
+                    <EditText
+                        android:id="@+id/gopageEditText"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:inputType="number"
+                        android:maxLength="4" />
+
+                    <TextView
+                        android:id="@+id/gopageTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="@string/jump"
+                        android:textAppearance="@style/pdf_jumpbtn" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:background="@color/common_bottom_bar_selected_bg"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/tab_jg_wdml"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_bottom_item_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="文档目录"
+                    android:textColor="@color/color_radiobutton"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/tab_jg_qpml"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_bottom_item_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="签批目录"
+                    android:textColor="@color/color_radiobutton"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/tab_jg_pzml"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_bottom_item_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="批注目录"
+                    android:textColor="@color/color_radiobutton"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/tab_jg_sqml"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_bottom_item_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="书签目录"
+                    android:textColor="@color/color_radiobutton"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nowpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tab_rdogroup"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="left"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:textColor="#868686"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

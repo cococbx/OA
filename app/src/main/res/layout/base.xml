@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:id="@+id/base_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/head" android:id="@+id/head_layout"/>
+	<TextView 
+	    android:id="@+id/hint"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp" 
+	    android:background="#f6f7cf"
+	    android:gravity="center"
+	    android:text="当前网络不可用 ,请检查您的网络设置。"
+	    android:textColor="@color/black"
+	    android:paddingLeft="5dp"
+	    android:textSize="40px"
+	    android:visibility="visible"
+	    />
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	     <ImageView 
+	        android:id="@+id/loading_error"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:scaleType="fitXY"
+	         android:contentDescription="TODO"/>
+<!-- 	        android:src="@drawable/webview_bg" -->
+		<LinearLayout 
+		    android:id="@+id/content_layout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:orientation="vertical"
+		    >
+		</LinearLayout>
+	</RelativeLayout>
+</LinearLayout>
+    
+
